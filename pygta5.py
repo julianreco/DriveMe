@@ -1,3 +1,4 @@
+#DriveMe Project
 import numpy as np
 from PIL import ImageGrab
 import cv2
@@ -17,7 +18,7 @@ def main():
     last_time = time.time()
     while True:
         screen =  np.array(ImageGrab.grab(bbox=(0,40,800,640)))
-        #print('Frame took {} seconds'.format(time.time()-last_time))
+        print('Frame took {} seconds'.format(time.time()-last_time))
         last_time = time.time()
         new_screen = process_img(screen)
         cv2.imshow('window', new_screen)
@@ -25,6 +26,7 @@ def main():
         if cv2.waitKey(25) & 0xFF == ord('q'):
             cv2.destroyAllWindows()
             break
+#dont forget declare the main function and call it 
 main()
 from IPython.display import Image
 Image(filename='edge-detection.png') 

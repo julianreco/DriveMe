@@ -1,0 +1,17 @@
+Bajar python 3.7.0
+
+https://www.python.org/ftp/python/3.7.0/python-3.7.0-amd64.exe
+
+bajar carla 0.9.5 y reemplazar manual_control.py y agregar sensordata2.py a la carpeta PythonAPI/examples/..
+
+http://carla-assets-internal.s3.amazonaws.com/Releases/Windows/CARLA_0.9.5.zip
+
+instalar python como variable de entorno en ADD to path la casilla de intalacion
+
+entrar a CMD y escribir estos comandos despues de intalar python
+
+pip install numpy
+pip install pygame
+pip install future
+
+para correr los scripts por ejemplo sensordata2.py debes estar dentro de PythonAPI/examples/..
